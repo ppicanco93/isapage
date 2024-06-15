@@ -12,20 +12,6 @@
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="Imagens/logo.png"> <!-- gerado pelo gemini -->
     <link rel="stylesheet" href="style.css">
-    <script>
-        // Check for browser support
-        if (navigator.serviceWorker) {
-            // After browser loads
-            window.addEventListener("load", () => {
-                navigator.serviceWorker
-                    .register("../sw.js", {
-                        scope: "/isapage"
-                    }) // Register
-                    .then((reg) => console.log("service worker registered"))
-                    .catch((err) => console.log(`Here is the error: ${err}`));
-            });
-        }
-    </script>
 </head>
 
 <body>
@@ -200,6 +186,14 @@
 
     <footer>
     </footer>
+    <script>
+        // register ServiceWorker, remember to use absolute path!
+        if (navigator.serviceWorker) {
+          navigator.serviceWorker.register('/isapage/sw.js', {scope: '/isapage/'})
+        }
+        
+        // --- Application code here ---
+    </script>
     <script src="script.js"></script>
 
 </body>
