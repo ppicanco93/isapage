@@ -18,7 +18,7 @@
             // After browser loads
             window.addEventListener("load", () => {
                 navigator.serviceWorker
-                    .register("/serviceWorkerDemo/sw-demo/sw.js") // Register
+                    .register("/sw.js") // Register
                     .then((reg) => console.log("service worker registered"))
                     .catch((err) => console.log(`Here is the error: ${err}`));
             });
