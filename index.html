@@ -18,7 +18,7 @@
             // After browser loads
             window.addEventListener("load", () => {
                 navigator.serviceWorker
-                    .register("sw.js", {
+                    .register("../sw.js", {
                         scope: "/isapage"
                     }) // Register
                     .then((reg) => console.log("service worker registered"))
