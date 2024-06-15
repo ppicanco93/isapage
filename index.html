@@ -13,18 +13,17 @@
     <link rel="apple-touch-icon" href="Imagens/logo.png"> <!-- gerado pelo gemini -->
     <link rel="stylesheet" href="style.css">
     <script>
-        if ('serviceWorker' in navigator) {
-          window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/service-worker.js')
-              .then(registration => {
-                console.log('Service Worker registered successfully:', registration);
-              })
-              .catch(error => {
-                console.error('Service Worker registration failed:', error);
-              });
-          });
+        // Check for browser support
+        if (navigator.serviceWorker) {
+            // After browser loads
+            window.addEventListener("load", () => {
+                navigator.serviceWorker
+                    .register("/serviceWorkerDemo/sw-demo/sw.js") // Register
+                    .then((reg) => console.log("service worker registered"))
+                    .catch((err) => console.log(`Here is the error: ${err}`));
+            });
         }
-      </script>
+    </script>
 </head>
 
 <body>
@@ -84,7 +83,8 @@
                     <h4 class="titulo-secao">Dra. Isabella Prado Motta</h4>
                     <h5>CRM-SP 208.695</h5>
                     <h5>RQE 123.832</h5>
-                    <p>Dermatologista formada pela Universidade Estadual de Campinas com enfoque em tratamento clínico e cirúrgico das doenças da pele.</p>
+                    <p>Dermatologista formada pela Universidade Estadual de Campinas com enfoque em tratamento clínico e
+                        cirúrgico das doenças da pele.</p>
                     <p>Será um prazer cuidar de você!</p>
                 </div>
                 <div id="localAtendimento">
@@ -115,10 +115,12 @@
                         Confira abaixo a minha formação.
                     </p>
                     <p>
-                        Graduação em <strong>Medicina</strong> pela Universidade Estadual de Campinas (<strong>Unicamp</strong>).
+                        Graduação em <strong>Medicina</strong> pela Universidade Estadual de Campinas
+                        (<strong>Unicamp</strong>).
                     </p>
                     <p>
-                        <strong>Intercâmbio</strong> universitário em <strong>Londres</strong> por um ano durante a graduação na <strong>Middlesex University</strong>.
+                        <strong>Intercâmbio</strong> universitário em <strong>Londres</strong> por um ano durante a
+                        graduação na <strong>Middlesex University</strong>.
                     </p>
                     <p>
                         <strong>Residência médica</strong> em Dermatologia na <strong>Unicamp</strong>.
@@ -127,7 +129,8 @@
                         Fellowship em <strong>Cirurgia Dermatológica</strong> na <strong>Unicamp</strong> em andamento.
                     </p>
                     <p>
-                        <strong>Mestrado</strong> na <strong>Unicamp</strong> sobre linfomas cutâneos primários em andamento.
+                        <strong>Mestrado</strong> na <strong>Unicamp</strong> sobre linfomas cutâneos primários em
+                        andamento.
                     </p>
                 </div>
                 <a href="https://www.rededorsaoluiz.com.br/encontre-um-medico/perfil/isabella-prado-motta">
@@ -170,21 +173,25 @@
                 </a>
             </div>
         </section>
-        <section  class="defaultSection" id="social-media">
+        <section class="defaultSection" id="social-media">
             <div class="text-container">
                 <div>
                     <h4 class="titulo-secao">Redes sociais</h4>
                 </div>
                 <div class="social-media">
-                     <a href="https://www.instagram.com/isabellamotta.dermato?igsh=MWd1ZDRpdXprZjRlbQ%3D%3D&utm_source=qr "><img src="Imagens/instagram.png" alt=""></a>
-                     <a href="https://www.linkedin.com/in/isabella-prado-motta-271893164/"><img src="Imagens/linkedin.png" alt=""></a>
-                     <a href="tel:+551930143000"><img src="Imagens/telefone.png" alt=""></a>
+                    <a
+                        href="https://www.instagram.com/isabellamotta.dermato?igsh=MWd1ZDRpdXprZjRlbQ%3D%3D&utm_source=qr "><img
+                            src="Imagens/instagram.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/isabella-prado-motta-271893164/"><img
+                            src="Imagens/linkedin.png" alt=""></a>
+                    <a href="tel:+551930143000"><img src="Imagens/telefone.png" alt=""></a>
                 </div>
                 <br>
                 Dra. Isabella Prado Motta <br>
                 CRM-SP 208.695 / RQE 123.832 <br>
                 Campinas - SP <br><br>
-                <a href="https://www.rededorsaoluiz.com.br/encontre-um-medico/perfil/isabella-prado-motta">Agendamentos on-line</a> ou pelo telefone <a href="tel:+551930143000">(19) 3014-3000</a>
+                <a href="https://www.rededorsaoluiz.com.br/encontre-um-medico/perfil/isabella-prado-motta">Agendamentos
+                    on-line</a> ou pelo telefone <a href="tel:+551930143000">(19) 3014-3000</a>
             </div>
         </section>
     </main>
@@ -192,7 +199,7 @@
     <footer>
     </footer>
     <script src="script.js"></script>
-    
+
 </body>
 
 </html>
