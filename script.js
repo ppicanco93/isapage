@@ -32,7 +32,7 @@ let prevScrollpos = window.scrollY;
 
 window.onscroll = function() {
   const currentScrollPos = window.scrollY;
-
+console.log(currentScrollPos);
   if(menuButton.classList.contains('active')) {
     menuButton.classList.toggle('active');
     dropdownMenu.style.display = 'none';
@@ -47,6 +47,10 @@ window.onscroll = function() {
     header.classList.remove('visible');
     header.classList.add('hidden');
   }
-
+if(currentScrollPos<10){
+  // Scrolling up
+  header.classList.remove('hidden');
+  header.classList.add('visible');
+}
   prevScrollpos = currentScrollPos;
 };
