@@ -2,21 +2,21 @@ var APP_PREFIX = 'IsaPage_'     // Identifier for this app (this needs to be con
 var VERSION = 'version_01'              // Version of the off-line cache (change this value everytime you want to update cache)
 var CACHE_NAME = APP_PREFIX + VERSION
 var URLS = [                            
-  '/isapage/',                     
-  '/isapage/index.html',          
-  '/isapage/script.js',          
-  '/isapage/style.css',          
-  '/isapage/Imagens/icon-192.png', 
-  '/isapage/Imagens/icon-512.png', 
-  '/isapage/Imagens/instagram.png', 
-  '/isapage/Imagens/linkedin.png', 
-  '/isapage/Imagens/Logo-topo.png',
-  '/isapage/Imagens/logo.png', 
-  '/isapage/Imagens/telefone.png', 
-  '/isapage/Imagens/logo.ico',
-  '/isapage/Imagens/isa1.JPG',
-  '/isapage/Imagens/isa2.JPG',
-  '/isapage/Imagens/isa3.JPG'
+  '/',                     
+  '/index.html',          
+  '/script.js',          
+  '/style.css',          
+  '/Imagens/icon-192.png', 
+  '/Imagens/icon-512.png', 
+  '/Imagens/instagram.svg', 
+  '/Imagens/linkedin.svg', 
+  '/Imagens/Logo-topo.svg',
+  '/Imagens/logo.svg', 
+  '/Imagens/telefone.svg', 
+  '/Imagens/logo.ico',
+  '/Imagens/isa1.JPG',
+  '/Imagens/isa2.JPG',
+  '/Imagens/isa3.JPG'
 ]
 
 // Respond with cached resources
