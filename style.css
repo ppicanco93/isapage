@@ -22,6 +22,10 @@ main {
     justify-content: center;
 }
 
+span{
+    color: black;
+}
+
 .social-media img{
     width: 60px;
     height: auto;
