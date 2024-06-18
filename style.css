@@ -103,34 +103,6 @@ header {
     margin: 0 auto;
 }
 
-.name {
-    text-align: center;
-    width: 200px;
-    margin-right: 20px;
-}
-
-.name h1 {
-    font-family: 'Comfortaa';
-    font-size: larger;
-    margin-bottom: 8px;
-    font-weight: normal;
-}
-
-.name hr {
-    width: 100%;
-    border: none;
-    border-top: 2px solid #333;
-    margin: 0 auto;
-}
-
-.name h2 {
-    margin: 8px auto;
-    font-size: large;
-    font-family: 'Inter';
-    font-weight: normal;
-    font-family: 'Comfortaa';
-}
-
 section {
     text-align: center;
     display: flex;
@@ -164,7 +136,7 @@ section img {
     padding-right: 20px;
 }
 
-#Title h3 {
+#Title h2 {
     width: 100%;
     font-weight: normal;
     font-family: 'Newsreader';
@@ -226,13 +198,6 @@ section img {
     font-size: 3em;
     letter-spacing: -2px;
 }
-
-/* #localAtendimento h3 {
-    font-family: 'Newsreader', sans-serif;
-    font-weight: normal;
-    font-size: 1.8em;
-    letter-spacing: -2px;
-} */
 
 #localAtendimento p {
     margin: 5px auto;
@@ -351,35 +316,6 @@ footer {
         height: auto;
     }
 
-    /* Name Styling */
-    .name {
-        text-align: center;
-        width: 200px;
-        margin-right: 20px;
-    }
-
-    .name h1 {
-        font-family: 'Comfortaa';
-        font-size: larger;
-        margin-bottom: 8px;
-        font-weight: normal;
-    }
-
-    .name hr {
-        width: 100%;
-        border: none;
-        border-top: 2px solid #333;
-        margin: 0 auto;
-    }
-
-    .name h2 {
-        margin: 8px auto;
-        font-size: large;
-        font-family: 'Inter';
-        font-weight: normal;
-        font-family: 'Comfortaa';
-    }
-
     /* Menu Button Styling */
     .menu-button {
         display: block;
@@ -486,7 +422,7 @@ footer {
     }
 
     /* Heading 3 Styling */
-    #Title h3 {
+    #Title h2 {
         width: 100%;
         font-weight: normal;
         font-family: 'Newsreader', sans-serif;
