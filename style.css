@@ -199,6 +199,16 @@ section img {
     letter-spacing: -2px;
 }
 
+h3{
+    width: 100%;
+    font-weight: normal;
+    font-family: 'Newsreader', sans-serif;
+    margin: 0px auto;
+    font-size: 3em;
+    letter-spacing: -2px;
+    text-align:center;
+}
+
 #localAtendimento p {
     margin: 5px auto;
     text-align: center;
